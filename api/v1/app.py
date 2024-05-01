@@ -20,8 +20,8 @@ def clean_up(e):
 
 @app.errorhandler(404)
 def not_found(e):
-    """ error `404 """
-    return jsonify({"error": "Not found"})
+    """ error 404 """
+    return jsonify({"error": "Not found"}), 404
 
 
 if __name__ == '__main__':
